@@ -11,10 +11,9 @@ namespace MoodAnalyserApp
         /// Initializes a new instance of the <see cref="MoodAnalyser"/> class.
         /// </summary>
         public MoodAnalyser() 
-        {
+        { 
         
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="MoodAnalyser"/> class.
         /// </summary>

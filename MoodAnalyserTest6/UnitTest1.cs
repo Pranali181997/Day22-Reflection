@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnalyserApp;
 
-namespace MoodAnalyserTest5
+namespace MoodAnalyserTest6
 {
     [TestClass]
     public class UnitTest1
@@ -195,6 +195,50 @@ namespace MoodAnalyserTest5
             catch (MoodAnalyserCustomException e)
             {
                 Assert.AreEqual("No such method found", e.Message);
+            }
+        }
+
+        /// <summary>
+        /// Givens the happy message with reflector should return happy mood.
+        /// </summary>
+        [TestMethod]
+        public void GivenHappyMessage_WithReflector_ShouldReturnHappyMood()
+        {
+            string expected = "Happy";
+            string result = MoodAnalyserReflector.SetField("Happy", "message");
+            Assert.AreEqual(expected, result);
+        }
+
+        /// <summary>
+        /// Givens the improper field should throw mood analyser custom exception.
+        /// </summary>
+        [TestMethod]
+        public void GivenImproperField_ShouldThrowMoodAnalyserCustomException()
+        {
+            try
+            {
+                string result = MoodAnalyserReflector.SetField("Happy", "msg");
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Field not found", e.Message);
+            }
+        }
+
+        /// <summary>
+        /// Givens the null message should throw mood analyser custom exception.
+        /// </summary>
+        [TestMethod]
+        public void GivenNullMessage_ShouldThrowMoodAnalyserCustomException()
+        {
+            try
+            {
+                string message = null;
+                string result = MoodAnalyserReflector.SetField(message, "message");
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Message cannot be null", e.Message);
             }
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserTest\\MoodAnalyserTest.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserTest\\MoodAnalyserTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserApp\\MoodAnalyserApp.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserApp\\MoodAnalyserApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
         "projectName": "MoodAnalyserApp",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserApp\\MoodAnalyserApp.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserApp\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserTest\\MoodAnalyserTest.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserTest\\MoodAnalyserTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
         "projectName": "MoodAnalyserTest",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserTest\\MoodAnalyserTest.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserTest\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserApp\\MoodAnalyserApp.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\MoodAnalyserApp\\MoodAnalyserApp.csproj"
+              "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserApp\\MoodAnalyserApp.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\BATCH 111\\Day-22-ReflectionProblem\\Day22-Reflection\\MoodAnalyserApp\\MoodAnalyserApp.csproj"
               }
             }
           }
@@ -100,19 +100,19 @@
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[2.1.0, )"
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[2.1.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.9.4, )"
+              "version": "[16.5.0, )"
             },
             "coverlet.collector": {
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[1.2.0, )"
             }
           },
           "imports": [

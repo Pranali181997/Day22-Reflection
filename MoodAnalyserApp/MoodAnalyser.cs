@@ -7,7 +7,7 @@ namespace MoodAnalyserApp
     public class MoodAnalyser
     {
         public string message;
-        public MoodAnalyser()
+        public MoodAnalyser() 
         {
         }
         /// <summary>
@@ -25,7 +25,7 @@ namespace MoodAnalyserApp
         public string AnalyseMood()
         {
             string mood;
-            if (message == "I am in a Any mood")
+            if (message == "I am in a Happy mood")
                 mood = "Happy";
             else if (message == "I am in a Sad mood")
                 mood = "Sad";
@@ -33,37 +33,5 @@ namespace MoodAnalyserApp
                 mood = null;
             return mood;
         }
-
-        //public string AnalyseMood1()
-        //{
-        //    string mood;
-        //    try
-        //    {
-        //        mood = this.message.Contains("Sad") || this.message.Contains("sad") ? "Sad" : "Happy";
-        //    }
-        //    catch
-        //    {
-        //        mood = "Happy";
-        //    }
-        //    return mood;
-        //}
-
-        public string AnalyseMood2()
-        {
-            string mood;
-            try
-            {
-                mood = this.message.Contains("Sad") || this.message.Contains("sad") ? "Sad" : "Happy";
-                if (this.message.Equals(string.Empty))
-                {
-                    throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.EMPTY_MESSAGE, "Mood should not be empty");
-                }
-            }
-            catch (NullReferenceException)
-            {
-                throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NULL_MESSAGE, "Mood should not be null");
-            }
-            return mood;
-        }       
     }
 }

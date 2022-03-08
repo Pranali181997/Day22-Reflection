@@ -41,6 +41,7 @@ namespace MoodAnalyserApp
                 throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_METHOD, "Constructor not found");
             }
         }
+
         /// <summary>
         /// Creates the object of mood analyser using parameterized constructor.
         /// </summary>
@@ -72,3 +73,4 @@ namespace MoodAnalyserApp
         }
     }
 }
+

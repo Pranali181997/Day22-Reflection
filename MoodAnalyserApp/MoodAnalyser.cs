@@ -9,6 +9,7 @@ namespace MoodAnalyserApp
         public string message;
         public MoodAnalyser() 
         {
+        
         }
         /// <summary>
         /// Initializes a new instance of the <see cref="MoodAnalyser"/> class.
@@ -18,19 +19,22 @@ namespace MoodAnalyserApp
         {
             this.message = message;
         }
+
         /// <summary>
-        /// Analyses the mood and returns happy or mood
+        /// Analyses the mood and returns happy or sad.
         /// </summary>
         /// <returns></returns>
         public string AnalyseMood()
         {
             string mood;
-            if (message == "I am in a Happy mood")
+            try
+            {
+                mood = this.message.Contains("Sad") || this.message.Contains("sad") ? "Sad" : "Happy";
+            }
+            catch
+            {
                 mood = "Happy";
-            else if (message == "I am in a Sad mood")
-                mood = "Sad";
-            else
-                mood = null;
+            }
             return mood;
         }
     }
